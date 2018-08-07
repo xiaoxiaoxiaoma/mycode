@@ -15,9 +15,9 @@
 class Reverse:
     def reverseString(self, iniString):
         # write code here
-        b = []
+        b = ''
         for i in range(len(iniString) - 1, -1, -1):
-            b.append(iniString[i])
+            b = b + iniString[i]
         return b
 
 

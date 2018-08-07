@@ -21,12 +21,10 @@ class Different:
         b = set()
         for i in iniString:
             b.add(i)
-
         if a == len(b):
             return True
         else:
             return False
-
 
 if __name__ == '__main__':
     di = Different()
