@@ -56,7 +56,7 @@ if __name__ == '__main__':
             f.writelines(dl.get_contents(dl.urls[i]))
             f.write('\n\n')
             f.flush()
-            print("已下载：%.3f%%" % float(i / dl.nums) + '\r')
+            sys.stdout.write("已下载：%.3f%%" % float(i / dl.nums) + '\r')
 
     # for i in range(dl.nums):
     #     dl.writer(dl.names[i],'F:\\厉害了我的原始人.txt',dl.get_contents(dl.urls[i]))
